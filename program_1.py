@@ -16,7 +16,9 @@ def randDice():
 # Then write a mainline that calls the "randDice" function 100 times in a for loop.  
 total=0
 for x in range(100):
-    randDice()
-    total=total+sum
-    print('The average of 100 rolls is', format(total,'.2f'))
+    add_sum=randDice()
+    total=(total+add_sum)
+
+final=total/100
+print('The average of 100 rolls is', format(final,'.2f'))
 # The mainline then prints the average of the 100 rolls, rounded to the nearest 0.01.
