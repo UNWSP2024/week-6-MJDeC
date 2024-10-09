@@ -9,3 +9,13 @@
 # The amount of state sales tax.
 # The total sales tax (county plus state)
 # Use at least one function with input and output in this program
+def tax():
+  sales=int(input('What is your total sales amount for this month in dollars?'))
+  ctax=sales*.025
+  stax=sales*.05
+  ttax=ctax+stax
+  print('The county sales tax is $',format(ctax, '.2f'),'.')
+  print('The state sales tax is $',format(stax,'.2f'),'.')
+  print('The total tax is $',format(ttax,'.2f'),'.')
+
+tax()
